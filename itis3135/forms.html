@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frank Conticello | ITIS3135 | Forms</title> 
+    <link rel="stylesheet" type="text/css" href="styles/default2.css">
+</head>
+
+<body id="Forms-page">
+
+<div data-include="components/header.html"></div>
+
+<main class="main">
+    <h1 class="center">╟ Frank Conticello ╫ Ferocious Chicken ╢</h1>
+    <hr class="half-div">
+    <h2 class="center">ITIS-3135 | HTML Forms</h2>
+    <hr class="quarter-div">
+    <br><br><br>
+
+    <form action="#">
+        <h3 class="center"><u>Business Inquiry<u></h3>
+        <br>
+        <div class="block">
+            <fieldset>
+                <label for="name">Name: <input id="name" type="text" placeholder="John Smith" required></label>
+                <label for="phone">Phone: <input id="phone" type="tel" placeholder="123-456-1780"></label>
+                <label for="email">Email: <input id="email" type="email" placeholder="john@smith.co" required></label>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <label>Which services are you inquiring about?</label>
+                <label for="web"><input id="web" type="checkbox"> Web design services</label>
+                <label for="hardware"><input id="hardware" type="checkbox"> Software design services</label>
+                <label for="installation"><input id="installation" type="checkbox"> Installation/implementation services</label>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <label>How large is your company?</label>
+                <label for="small-business"><input id="small-business" type="radio" name="business-size"> Small (fewer than
+                    100 employees)</label>
+                <label for="medium-business"><input id="medium-business" type="radio" name="business-size"> Medium (between
+                    100 and 1,500 employees)</label>
+                <label for="large-business"><input id="large-business" type="radio" name="business-size"> Large (greater
+                    than 1,500 employees)</label>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <label for="dropdown">Have you completed a project with us before?
+                    <select id="dropdown">
+                        <option>--Choose one--</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </div>
+    </form>
+</main>
+
+<div data-include="components/footer.html"></div>
+</body>
+<script src="scripts/HTMLinclude.js"></script>
+</html>
