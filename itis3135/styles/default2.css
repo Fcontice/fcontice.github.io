@@ -280,11 +280,6 @@ tr:nth-child(odd){
     border: 3px solid #feac32;
   }
 
-  .contiImg{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
 /* Forms */
 .formSubmit{
     background-color:darkgreen;
