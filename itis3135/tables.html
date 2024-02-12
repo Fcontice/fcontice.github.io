@@ -4,145 +4,150 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ferocious Chicken | ITIS-3135 | Tables</title>
+	<title>Ferocious Chicken ITIS3135 | Tables</title>
 	<link rel="stylesheet" type="text/css" href="styles/default2.css">
 </head>
-<!-- -->
 <body id="tables-page">
-<!-- -->
+
 <div data-include="components/header.html"></div>
 
-<main>
-    <h2 class="center"><strong><u>HTML Tables</u></strong></h2>
-	    <div class="main-block">
-            <h3>Data</h3>
+<main class="main">
+    <h1 class="center">╟ Frank Conticello ╫ Ferocious Chicken ╢</h1>
+    <hr class="half-div">
+    <h2 class="center">ITIS-3135 | HTML Tables</h2>
+    <hr class="quarter-div">
+    <br><br><br>
+	    <div class="block-fit">
+        <h3>Data</h3>
+        <br>
+        <div class="data-tables-back">
+        <ol class="data">
+            <li>Frank Conticello | fcontice@uncc.edu        | $1,000,000</li>
+            <li>Clayton Wagner   | Cwag@uncc.edu            | $100,000</li>
+            <li>Clayton Kershaw  | Ckersh@Dodgers.mlb       | $100,000,000</li>
+            <li>Destiny Wiggins  | DestinyWig@drms.com      | $1,500</li>
+            <li>Charley Chapman  | ChaptheMan@chestday.com  | $86,000</li>
+            <li>Bill Slayer      | SlayerofBills@gmail.com  | $2,450,000</li>
+            <li>Jessie Joice     | JoyfulJJ@calamity.com    | $65,700</li>
+            <li>Rebecca Vaughan  | Greengally@Vaughannc.com | $140,000</li>
+        </ol>
+        </div>
             <br>
-            <div class="data-tables-back">
-            <ol class="data-tables">
-                <li>Frank Conticello | fcontice@uncc.edu        | $1,000,000</li>
-                <li>Clayton Wagner   | Cwag@uncc.edu            | $100,000</li>
-                <li>Clayton Kershaw  | Ckersh@Dodgers.mlb       | $100,000,000</li>
-                <li>Destiny Wiggins  | DestinyWig@drms.com      | $1,500</li>
-                <li>Charley Chapman  | ChaptheMan@chestday.com  | $86,000</li>
-                <li>Bill Slayer      | SlayerofBills@gmail.com  | $2,450,000</li>
-                <li>Jessie Joice     | JoyfulJJ@calamity.com    | $65,700</li>
-                <li>Rebecca Vaughan  | Greengally@Vaughannc.com | $140,000</li>
-            </ol>
-            </div>
+        <h3><strong>Employee Data in Simple Table</strong></h3>
+        <br>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>salary</th>
+                </tr>
+                <tr>
+                    <td>Frank Conticello</td>
+                    <td>fcontice@uncc.edu</td>
+                    <td>$1,000,000</td>
+                </tr>
+                <tr>
+                    <td>Clay Wagner</td>
+                    <td>Cwag@uncc.edu</td>
+                    <td>$100,000</td>
+                </tr>
+                <tr>
+                    <td>Clayton Kershaw</td>
+                    <td>CKersh@Dodgers.mlb</td>
+                    <td>$100,000,000</td>
+                </tr>
+                <tr>
+                    <td>Destiny Wiggins</td>
+                    <td>DestinyWig@drms.com</td>
+                    <td>$1,500</td>
+                </tr>
+                <tr>
+                    <td>Charley Chapman</td>
+                    <td>ChaptheMan@chestday.com</td>
+                    <td>$86,000</td>
+                </tr>
+                <tr>
+                    <td>Bill Slayer</td>
+                    <td>SlayerofBills@gmail.com</td>
+                    <td>$2,450,000</td>
+                </tr>
+                <tr>
+                    <td>Jessie Joice</td>
+                    <td>JoyfulJJ@calamity.com</td>
+                    <td>$65,700</td>
+                </tr>
+                <tr>
+                    <td>Rebecca Vaughan</td>
+                    <td>Greengally@Vaughannc.com</td>
+                    <td>$140,000</td>
+                </tr>
+            </table>
+        <br>
+        <h3><strong>Employee Data in Complex Table</strong></h3>
+        <br>
+            <table>
+                <tr>
+                    <th id="title">Title</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>salary</th>
+                </tr>
+                <tr>
+                    <td headers="title">CEO</td>
+                    <td headers="name">Frank Conticello</td>
+                    <td headers="email">fcontice@uncc.edu</td>
+                    <td headers="salary">$1,000,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" headers="title">Director of Operations</td>
+                    <td headers="name">Clay Wagner</td>
+                    <td headers="email">Cwag@uncc.edu</td>
+                    <td headers="salary">$100,000</td>
+                </tr>
+                <tr>
+                    <td headers="name">Clayton Kershaw</td>
+                    <td headers="email">CKersh@Dodgers.mlb</td>
+                    <td headers="salary">$30,000,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" headers="title">Hardware Designers</td>
+                    <td headers="name">Destiny Wiggins</td>
+                    <td headers="email">DestinyWig@drms.com</td>
+                    <td headers="salary">$1,500</td>
+                </tr>
+                <tr>
+                    <td headers="name">Charley Chapman</td>
+                    <td headers="email">ChaptheMan@chestday.com</td>
+                    <td headers="salary">$86,000</td>
+                </tr>
+                <tr>
+                    <td headers="name">Bill Slayer</td>
+                    <td headers="email">SlayerofBills@gmail.com</td>
+                    <td headers="salary">$2,450,000</td>
+                </tr>
+                <tr>
+                    <td headers="title">Janitor</td>
+                    <td headers="name">Jessie Joice</td>
+                    <td headers="email">JoyfulJJ@calamity.com</td>
+                    <td headers="salary">$65,700</td>
+                </tr>
+                <tr>
+                    <td headers="title">Lead Field Expert</td>
+                    <td headers="name">Rebecca Vaughan</td>
+                    <td headers="email">Greengally@Vaughannc.com</td>
+                    <td headers="salary">$140,000</td>
+                </tr>
+                <tr>
+                    <th colspan="3" id="totals">Total Salary</th>
+                    <td headers="salary totals">$33,757,200</td>
+                </tr>
+            </table>
             <br>
-                <h3><strong>Employee Data in Simple Table</strong></h3>
-                <br>
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>salary</th>
-                    </tr>
-                    <tr>
-                        <td>Frank Conticello</td>
-                        <td>fcontice@uncc.edu</td>
-                        <td>$1,000,000</td>
-                    </tr>
-                    <tr>
-                        <td>Clay Wagner</td>
-                        <td>Cwag@uncc.edu</td>
-                        <td>$100,000</td>
-                    </tr>
-                    <tr>
-                        <td>Clayton Kershaw</td>
-                        <td>CKersh@Dodgers.mlb</td>
-                        <td>$100,000,000</td>
-                    </tr>
-                    <tr>
-                        <td>Destiny Wiggins</td>
-                        <td>DestinyWig@drms.com</td>
-                        <td>$1,500</td>
-                    </tr>
-                    <tr>
-                        <td>Charley Chapman</td>
-                        <td>ChaptheMan@chestday.com</td>
-                        <td>$86,000</td>
-                    </tr>
-                    <tr>
-                        <td>Bill Slayer</td>
-                        <td>SlayerofBills@gmail.com</td>
-                        <td>$2,450,000</td>
-                    </tr>
-                    <tr>
-                        <td>Jessie Joice</td>
-                        <td>JoyfulJJ@calamity.com</td>
-                        <td>$65,700</td>
-                    </tr>
-                    <tr>
-                        <td>Rebecca Vaughan</td>
-                        <td>Greengally@Vaughannc.com</td>
-                        <td>$140,000</td>
-                    </tr>
-                </table>
-                <br>
-                <h3><strong>Employee Data in Complex Table</strong></h3>
-                <br>
-                <table>
-                    <tr>
-                        <th id="title">Title</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>salary</th>
-                    </tr>
-                    <tr>
-                        <td headers="title">CEO</td>
-                        <td headers="name">Frank Conticello</td>
-                        <td headers="email">fcontice@uncc.edu</td>
-                        <td headers="salary">$1,000,000</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2" headers="title">Director of Operations</td>
-                        <td headers="name">Clay Wagner</td>
-                        <td headers="email">Cwag@uncc.edu</td>
-                        <td headers="salary">$100,000</td>
-                    </tr>
-                    <tr>
-                        <td headers="name">Clayton Kershaw</td>
-                        <td headers="email">CKersh@Dodgers.mlb</td>
-                        <td headers="salary">$30,000,000</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="3" headers="title">Hardware Designers</td>
-                        <td headers="name">Destiny Wiggins</td>
-                        <td headers="email">DestinyWig@drms.com</td>
-                        <td headers="salary">$1,500</td>
-                    </tr>
-                    <tr>
-                        <td headers="name">Charley Chapman</td>
-                        <td headers="email">ChaptheMan@chestday.com</td>
-                        <td headers="salary">$86,000</td>
-                    </tr>
-                    <tr>
-                        <td headers="name">Bill Slayer</td>
-                        <td headers="email">SlayerofBills@gmail.com</td>
-                        <td headers="salary">$2,450,000</td>
-                    </tr>
-                    <tr>
-                        <td headers="title">Janitor</td>
-                        <td headers="name">Jessie Joice</td>
-                        <td headers="email">JoyfulJJ@calamity.com</td>
-                        <td headers="salary">$65,700</td>
-                    </tr>
-                    <tr>
-                        <td headers="title">Lead Field Expert</td>
-                        <td headers="name">Rebecca Vaughan</td>
-                        <td headers="email">Greengally@Vaughannc.com</td>
-                        <td headers="salary">$140,000</td>
-                    </tr>
-                    <tr>
-                        <th colspan="3" id="totals">Total Salary</th>
-                        <td headers="salary totals">$33,757,200</td>
-                    </tr>
-                </table>
 	    </div>
+    <br>
 </main>
-<div data-include="components/footer.html"></div>
 
+<div data-include="components/footer.html"></div>
 <script src="scripts/HTMLinclude.js"></script>
 </body>
 </html>

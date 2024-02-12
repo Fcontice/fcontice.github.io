@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frank Conticello | ITIS3135 | First Scripts</title> 
+    <link rel="stylesheet" type="text/css" href="styles/default2.css">
+</head>
+
+<body id="firstscripts">
+
+<div data-include="components/header.html"></div>
+
+<main class="main">
+    <h1 class="center">╟ Frank Conticello ╫ Ferocious Chicken ╢</h1>
+    <hr class="half-div">
+    <h2 class="center">Course Home</h2>
+    <hr class="quarter-div">
+    <br><br><br>
+
+    <div class="block">
+    <button onclick="displayDateTime();">Get Date</button>
+            <h3 id="date">click button for time</h3>
+    
+    <form>
+        <fieldset>
+            <legend>Enter your name</legend>
+            <label for="name">Name: <input type="text" id="name"></label>
+            <label for="emotion">Type how you're feeling: <input type="text" id="emotion"></label>
+            <label for="button"><input type="button" value="send" onclick="greeting();"></label>
+            <h3 id="greeting">click button to display name</h3>
+        </fieldset>
+    </form>
+    <br>
+    <form id="polygonForm">
+        <fieldset>
+            <legend>Enter Your Favorite Number (1-10)</legend>
+            <label for="number">Number: <input type="number" id="number" ></label>
+            <input type="button" value="send" onclick="calculatePolygon();">
+        </fieldset>
+    </form>
+    </div>
+</main>
+
+<div data-include="components/footer.html"></div>
+<script src="scripts/firstscript.js"></script>
+<script src="scripts/HTMLinclude.js"></script>
+</body>
+</html>
