@@ -167,6 +167,11 @@ margin-bottom: 20px;
     color: #000;
     text-decoration: none;
 }
+.web-link{
+    color: #000;
+    text-decoration: none;
+}
+
 .page-link:hover{
     color: #fff;
 }
@@ -290,3 +295,7 @@ tr:nth-child(odd){
     color: white;
 }
 
+
+h4{
+    text-decoration: underline;
+}
